@@ -19,6 +19,7 @@ function getTrialsJSON($offset){
 
 function getLastTrialNumberRetrieved(){
     $db = new mysqli("localhost", "root", "root", "ptab");
+
     if($db->connect_errno > 0){
         die('Unable to connect to database [' . $db->connect_error . ']');
     }
